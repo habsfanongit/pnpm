@@ -1,0 +1,17 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .: {}
+
+  services/example:
+    dependencies:
+      '@shared/common':
+        specifier: ^1.0.0
+        version: link:../../shared/common
+
+  shared/common: {}
